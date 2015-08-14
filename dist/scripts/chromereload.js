@@ -1,0 +1,1 @@
+"use strict";var LIVERELOAD_HOST="localhost:",LIVERELOAD_PORT=35729,connection=new WebSocket("ws://"+LIVERELOAD_HOST+LIVERELOAD_PORT+"/livereload");connection.onerror=function(a){console.log("reload connection got error:",a)},connection.onmessage=function(a){if(a.data){var b=JSON.parse(a.data);b&&"reload"===b.command&&chrome.runtime.reload()}};
